@@ -12,6 +12,13 @@
     */
     $(function () {
       // write your code here
+      $('#clear-button').click(function() {
+        $('#text-field').val('');
+      });
+      $('#save-button').click(function() {
+        let $input = $('#text-field').val();
+        $('#log').append($input);
+      });
     });
     </script>
   </head>
