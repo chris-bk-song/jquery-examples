@@ -13,6 +13,14 @@
     */
     $(function() {
       // Write code here
+      $('a').click(function(e) {
+        //prevent navigating the browser to that link when clicked
+        e.preventDefault();
+        // get href attribute from this(anchor) tag 
+        let $link = $(this).attr('href');
+        // get information assigned to $link and set it to src attribute of #iframe
+        $('#iframe').attr('src', $link)
+      });
     });
     </script>
   </head>
