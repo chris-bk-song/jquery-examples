@@ -16,10 +16,14 @@
         $('#text-field').val('');
       });
       $('#save-button').click(function() {
+        // gets input data from textbox and assigns it as input variable
         let input = $('#text-field').val();
-        let $listItem = $('<li>');
-        $listItem.text(input);
-        $('#log').append($listItem);
+        // creates variable named newList and sets it as <li></li> tag 
+        let $newList = $('<li>');
+        // adds input data to newList
+        $newList.text(input);
+        // appends newList inside unordered list with id=log 
+        $('#log').append($newList);
       });
     });
     </script>
