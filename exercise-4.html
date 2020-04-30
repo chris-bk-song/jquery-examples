@@ -16,8 +16,10 @@
         $('#text-field').val('');
       });
       $('#save-button').click(function() {
-        let $input = $('#text-field').val();
-        $('#log').append($input);
+        let input = $('#text-field').val();
+        let $listItem = $('<li>');
+        $listItem.text(input);
+        $('#log').append($listItem);
       });
     });
     </script>
